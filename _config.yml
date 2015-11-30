@@ -50,6 +50,15 @@ favicon: /images/shortcut.jpg
 nav:
   - text: 首页
     url: /index.html
+  - text: 分类目录 
+    url: /categories.html
+  - text: 文章归档
+    url: /archives.html
+  - text: 关于我
+    url: /about.html
+  - text: 友情链接
+    url: /links.html
+
     
 #Author config
 author:
@@ -61,3 +70,12 @@ author:
       <p>学习股票</p>
       <p>学习计算机</p>
       <p>学会生活</p>
+
+follow:
+  - class: icon-rss
+    url: /atom.xml
+    
+customLinks:
+  - item:
+    - text: baidu
+      url: https://www.baidu.com
