@@ -44,7 +44,7 @@ description: My Blog
 keywords: Program
 url: http://odoem.github.io/odoem
 feed: /atom.xml
-favicon: /images/shortcut.jpg
+favicon: /odoem/images/shortcut.jpg
 
 #Nav config
 nav:
