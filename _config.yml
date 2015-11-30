@@ -42,9 +42,9 @@ timezone:      null
 title: My Blog
 description: My Blog
 keywords: Program
-url: http://odoem.github.io/odoem
+url: http://odoem.github.io/odoem/
 feed: /atom.xml
-favicon: /odoem/images/shortcut.jpg
+favicon: /images/shortcut.jpg
 
 #Nav config
 nav:
