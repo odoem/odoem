@@ -1,1 +1,63 @@
-baseurl: /odoem
+# Where things are
+source:       .
+destination:  ./_site
+plugins:      ./_plugins
+layouts:      ./_layouts
+paginate:     8
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      []
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+textile_ext:  "textile"
+
+# Filtering Content
+show_drafts:  null
+limit_posts:  0
+future:       true
+unpublished:  false
+
+# Conversion
+markdown:     kramdown
+highlighter:  pygments
+lsi:          false
+excerpt_separator: "\n\n"
+
+# Serving
+detach:       false
+port:         4000
+host:         127.0.0.1
+baseurl:      "" # does not include hostname
+
+# Outputting
+permalink:     date
+paginate_path: /page:num
+timezone:      null
+
+
+#Site config
+title: My Blog
+description: My Blog
+keywords: Program
+url: http://odoem.github.io/odoem
+feed: /atom.xml
+favicon: /images/shortcut.jpg
+
+#Nav config
+nav:
+  - text: 首页
+    url: /index.html
+    
+#Author config
+author:
+    name: odoem
+    email: zorol@126.com
+    imageLink: /images/header.jpg
+    simpleIntro: I Have a Dream
+    detailIntro:
+      <p>学习股票</p>
+      <p>学习计算机</p>
+      <p>学会生活</p>
