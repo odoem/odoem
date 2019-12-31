@@ -1,0 +1,16 @@
+---
+layout: default
+title: Happy Birthday
+date: 2019-12-31 20:22:33
+category: "work"
+---
+
+　　关于applyNextSubpath的调用中，判断将要申请的点是否能够申请下来，其中的逻辑整理如下：
+　　循环遍历所有的agv（除当前agv外的在场的agv）； 
+1.1 agv处于空闲状态，没有路径；
+1.1.1 待申请点包含自己路径最后一个点且agv从待申请点到路径末端都没有经过agv所在点（经过的判断是rate0,rateEdge对agv所在点的rate0取交集），需要考虑待申请点的pid,rate0,rate1,rateEdge及rate0和reteEdge和rate1的rate0扩展与agv所在点的pid,rate0,rate1比较；
+1.1.2 待申请点包含自己路径的最后一点且agv从待申请点到路径末端经过了agv所在点（经过的判断是rate0,rateEdge对agv所在点的rate0取交集），则该状态为瞬时状态（会产生对该agv的避让任务），需要考虑申请点的pid,rate0,rate1,rateEdge与agv所在点的pid,rate0,rate1比较；
+1.1.3 待申请点不包含自己路径的最后一点且agv从待申请点到路径末端经过了agv所在点（经过的判断是rate0,rateEdge对agv所在点的rate0取交集），需要考虑待申请点的pid,rate0,rateEdge与agv所在点的pid,rate0,rate1比较；
+1.1.4 未经过则不无交集；
+1.2 agv的路径被删除，但是占据的点还没有走完；
+1.3 agv有路径；
