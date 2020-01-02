@@ -1,0 +1,8 @@
+---
+layout: default
+title: Software Design
+date: 2020-01-02 20:22:33
+category: "work"
+---
+
+软件插件化
